@@ -1,0 +1,19 @@
+@mixin style-h2($color, $bg-color, $rotate-deg, $border-color){
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 30px;
+    color: $color;
+    background-color: $bg-color;
+    transform: rotate($rotate-deg);
+    border: solid 1px $border-color;
+}
+
+@mixin button{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 16px 32px;
+    border: solid 1px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+}

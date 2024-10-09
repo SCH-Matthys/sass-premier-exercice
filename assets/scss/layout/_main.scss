@@ -1,0 +1,27 @@
+@use "../abstract/mixins";
+
+main{
+    section{
+        height: 20vh;
+    }
+    section:nth-of-type(1){
+        h2{
+            @include mixins.style-h2(white, darkblue, 0deg, red) ;
+        }
+    }
+    section:nth-of-type(2){
+        h2{
+            @include mixins.style-h2(black, lightblue, 180deg, purple) ;
+        }
+    }
+    section:nth-of-type(3){
+        h2{
+            @include mixins.style-h2(black, lightcoral, 0deg, blue) ;
+        }
+    }
+    section:nth-of-type(4){
+        h2{
+            @include mixins.style-h2(black, lightgreen, 180deg, green) ;
+        }
+    }
+}
